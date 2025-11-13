@@ -1,5 +1,5 @@
 # Student Enrollment System
-#Student Enrollment System designed to easily manage student registrations and course details. It allows administrators to efficiently add students, organize the course catalog, and track enrollments. The system is built using object-oriented principles to ensure data is handled reliably and the application is easy to maintain.
+Student Enrollment System designed to easily manage student registrations and course details. It allows administrators to efficiently add students, organize the course catalog, and track enrollments. The system is built using object-oriented principles to ensure data is handled reliably and the application is easy to maintain.
 
 ## Table of Contents
 * [Features](#features)
