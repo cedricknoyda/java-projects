@@ -1,26 +1,37 @@
 # Student Enrollment System
 ![Student Enrollment System Background](https://raw.githubusercontent.com/cedricknoyda/image-/main/Screenshot%202025-11-13%20210808.png)
 <br/>
-Student Enrollment System designed to easily manage student registrations and course details. It allows administrators to efficiently add students, organize the course catalog, and track enrollments. The system is built using object-oriented principles to ensure data is handled reliably and the application is easy to maintain.
+<br/>
 
-## Table of Contents
-* [Features](#features)
-* [Prerequisites](#prerequisites)
-* [Installation](#installation)
-* [Usage](#usage)
-* [Code Structure](#code-structure)
-* [Program Details](#program-details)
+## Description/Overview
+<br/>
+The Student Enrollment System is a console-based program that simplifies the student enrollment process for the "Batangas State University , College of Informatics and Computing Sciences." It collects essential student information such as name, age, and address. It also helps students choose their academic program (BSIT or BSCS) and year level, and assigns them to a proper class block with a set schedule. The key features include validating student data like name and age, showing course lists and block schedules specific to each program (including face-to-face and online classes), and generating a unique Student ID after successful registration. This system addresses the issues of manual and error-prone enrollment by offering a structured, interactive, and automated way to register students, giving them their complete class schedule and enrollment summary right away.
+<br/>
+<br/>
 
-  # Usage
-  The EnrollmentSystem project is a command-line application that simulates student enrollment. It collects personal and academic data, shows course options based on the chosen program and year level, and displays a detailed enrollment summary. This summary includes a generated student ID and the selected block schedule. The system guides the user through a series of inputs for name, age, program, and block choice. It also includes validation checks for inputs like age and name format to ensure correct data collection.
 
-  ## Features
-* **Collection of Student Information:** Gathers Name, Age, and Address.
-* **Enrollment Period Selection:** Currently supports enrollment only for the first semester 2025-2026
-* **Program and Year Level Choice:** Allows selection between BSIT and BSCS for 1st, 2nd, 3rd, and 4th Year, 1st Semester.
-* **Course and Block Display:** Shows the list of courses for the selected program/year and presents detailed block schedules (including F2F-Face-to-Face and OLC-Online Class).
-* **Automated ID Generation:** Generates a unique student ID upon enrollment.
-* **Summary Display:** Prints a formatted enrollment summary for the student.
-* **Formatted Output:** Uses custom helper methods (`printCenteredLine`, `printBoxLine`) to create a neat, boxed CLI interface.
 
-  
+## OOP Concepts Applied
+- **CLASSES and OBJECTS**
+    - Classes
+        - The ```Student```acts as a guide for making personal student records.It defines the attributes such as ```name```,```age```,```program```,and ```studentID```, and the methods (behavior) like ```displayDetails()```.
+        - The ```EnrollmentSystem``` class serves as the main application container. It holds the core logic, utility methods (```printCenteredLine```,``` displayCourses```), and the main execution point (```main```).
+    - Objects
+        - In the ```main``` method, a new student object```newStudent```, is created using the ``Student`` class's constructor: ```Student newStudent = new Student(...)```.
+        - This object holds all the specific data gathered during the enrollment process for that student.
+        - The ```studentRoster``` array, defined as private static ```Student[] studentRoster = new Student[50];```, is an array designed to hold up to 50 **Student objects**.
+<br>
+
+- **ENCAPSULATION** - is the binding of data (fields) and the methods that work on that data into a single unit (the class). It also limits direct access to some parts of the object.
+   - In the ```Student``` class, attributes like ```studentID```, ```name```, ```age```, and ```program``` are declared with no explicit access modifier, which is default or package-private. However, it's better to enforce this principle by providing controlled access through methods.
+   - The Setter Method setBlock() allows external code to modify the block attribute in a controlled way.
+
+   - The Getter Method getProgram() allows external code to read the student's program without exposing the internal field directly.
+
+   - The utility methods in EnrollmentSystem (like printCenteredLine and printBoxLine) encapsulate complex formatting logic, so the main method only needs to call a single, clean method.
+
+
+- **INHERITANCE**
+- **POLYMORPHISM**
+- **ABSTRACTION**
+
