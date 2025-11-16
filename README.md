@@ -22,16 +22,16 @@ The Student Enrollment System is a console-based program that simplifies the stu
         - The ```studentRoster``` array, defined as private static ```Student[] studentRoster = new Student[50];```, is an array designed to hold up to 50 **Student objects**.
 <br>
 
-- **ENCAPSULATION** - is the binding of data (fields) and the methods that work on that data into a single unit (the class). It also limits direct access to some parts of the object.
-   - In the ```Student``` class, attributes like ```studentID```, ```name```, ```age```, and ```program``` are declared with no explicit access modifier, which is default or package-private. However, it's better to enforce this principle by providing controlled access through methods.
-   - The Setter Method setBlock() allows external code to modify the block attribute in a controlled way.
+- **ENCAPSULATION** - Encapsulation involves grouping data and the methods that work on that data within a class. It also controls how external entities can access that data.
+   - Attributes like a student's ```name```, ```age```, and ```studentID``` are contained within the ```Student``` class
+   - The program provides specific methods to interact with this data:
+        - Getters (like ```getProgram()``` in the ```Student``` class) allow code to read a value.
+        - Setters (like ```setBlock()``` in the ```Student``` class) allow code to write or modify a value in a controlled way.
 
-   - The Getter Method getProgram() allows external code to read the student's program without exposing the internal field directly.
-
-   - The utility methods in EnrollmentSystem (like printCenteredLine and printBoxLine) encapsulate complex formatting logic, so the main method only needs to call a single, clean method.
-
-
-- **INHERITANCE**
+- **INHERITANCE** - 
+    - 
 - **POLYMORPHISM**
-- **ABSTRACTION**
+- **ABSTRACTION** - Abstraction shows only the essential information while hiding the complicated implementation details.
+   - Methods like displayCourses() hide the vast if/else logic that determines which specific courses to list based on the program (BSIT/BSCS) and year level. The calling code only needs to know the method name and the necessary parameters (program and yearLevel).
+  
 
