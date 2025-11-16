@@ -28,8 +28,19 @@ The Student Enrollment System is a console-based program that simplifies the stu
         - Getters (like ```getProgram()``` in the ```Student``` class) allow code to read a value.
         - Setters (like ```setBlock()``` in the ```Student``` class) allow code to write or modify a value in a controlled way.
 
-- **INHERITANCE** 
-- **POLYMORPHISM**
+- **INHERITANCE** - Inheritance involves creating a superclass. Specialized subclasses then take on its shared attributes and behaviors.
+   - Superclass:
+        - A base class, like ```AcademicPerson``` (or a similar name), is created. It contains attributes that are common to all university members, such as ```name```, ```age```, and ```address```.
+    - Subclasses:
+        -  Include classes such as ```Student```, ```Faculty```, and ```Administrator``` (or the other two subclasses you added), which extend the ```AcademicPerson``` superclass. They inherit common attributes and add their unique properties. For instance, the ```Student`` class adds ```studentID```, ```program```, and ```block```. This creates a clear "is-a" relationship; a **Student is an AcademicPerson**.
+          
+- **POLYMORPHISM** - Polymorphism, which means "many forms," allows a common method to work differently depending on the specific type of the object.
+    - Overridden Method: A method, such as ```getDetailsSummary()``` or ```displayRole()```, is defined in the superclass (```AcademicPerson```).
+    - Dynamic Behavior: This method is overridden in each subclass (```Student```, ```Faculty```, etc.) to provide role-specific output.
+        - The ```Student``` version might print: "Enrolled in BSIT - 1st Year 1st Sem."
+        - The ```Faculty``` version might print: "Teaching in the Computer Science Department."
+    - When a collection of ```AcademicPerson``` references is processed, calling the common method runs the right, specialized version for each object at runtime. This shows dynamic polymorphism.
+  
 - **ABSTRACTION** - Abstraction shows only the essential information while hiding the complicated implementation details.
    - Methods like ```displayCourses()``` hide the vast ```if/else``` logic that determines which specific courses to list based on the program (BSIT/BSCS) and year level.The calling code just needs to know the method name and the required parameters, which are ```program``` and ```yearLevel```.
    - The ```Student.displayDetails()``` This method offers a straightforward interface to print the student's complete enrollment summary. It removes the need for multiple calls to format and print each line.
