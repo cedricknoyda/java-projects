@@ -1,4 +1,4 @@
-# Student Enrollment System
+# SES : Student Enrollment System
 ![Student Enrollment System Background](https://raw.githubusercontent.com/cedricknoyda/image-/main/Screenshot%202025-11-13%20210808.png)
 <br/>
 <br/>
@@ -52,3 +52,24 @@ Second, there is the **Student** class. This class is like a blueprint for creat
 
 ## HOW TO RUN THE PROGRAM
 To start, the user needs to use the command like command prompt or terminal and have java installed. First, they must compile the source code. The user should go to the folder where they saved the Java files (**EnrollmentSystem.java** and **Student.java**) and use the Java compiler command **“javac EnrollmentSystem.java”** Once the code is compiled successfully, the user can run the program. They should use the Java execution command to start the main class **“java EnrollmentSystem”** The program will then greet the user and start asking for their details right away.
+
+## SAMPLE OUTPUT
+
+![SAMPLE OUTPUT](https://github.com/cedricknoyda/image-/blob/main/581969051_1265517308925083_914414488596820509_n.png)
+<br/>
+![SAMPLE OUTPUT](https://github.com/cedricknoyda/image-/blob/main/582110359_2599652210398892_3482966512181459658_n.png)
+<br/>
+![SAMPLE OUTPUT](https://github.com/cedricknoyda/image-/blob/main/582111556_1538945017419883_4834425962798704109_n.png)
+<br/>
+![SAMPLE OUTPUT](https://github.com/cedricknoyda/image-/blob/main/582200834_1896306211097146_1638670185329471040_n.png)
+<br/>
+![SAMPLE OUTPUT](https://github.com/cedricknoyda/image-/blob/main/583872097_2051664858910692_3950559076868853180_n.png)
+
+## AUTHOR AND ACKNOWLEDGEMENT
+Our project **“SES: Student Enrollment System”** was done by our team **“Sesters”**. Our members’ name is listed here:
+   - **_Ilagan, Krishylla Mae_**
+   - **_Noyda, John Cedrick D._** 
+   - **_Sto niño, Mary Grace A._**
+
+Our team would like to thank our instructor, **_Mr. Emmanuel Charlie Enriquez_** for guiding us throughout the Final Project.
+
