@@ -28,10 +28,8 @@ The Student Enrollment System is a console-based program that simplifies the stu
         - Getters (like ```getProgram()``` in the ```Student``` class) allow code to read a value.
         - Setters (like ```setBlock()``` in the ```Student``` class) allow code to write or modify a value in a controlled way.
 
-- **INHERITANCE** - 
-    - 
+- **INHERITANCE** 
 - **POLYMORPHISM**
 - **ABSTRACTION** - Abstraction shows only the essential information while hiding the complicated implementation details.
-   - Methods like displayCourses() hide the vast if/else logic that determines which specific courses to list based on the program (BSIT/BSCS) and year level. The calling code only needs to know the method name and the necessary parameters (program and yearLevel).
-  
-
+   - Methods like ```displayCourses()``` hide the vast ```if/else``` logic that determines which specific courses to list based on the program (BSIT/BSCS) and year level.The calling code just needs to know the method name and the required parameters, which are ```program``` and ```yearLevel```.
+   - The ```Student.displayDetails()``` This method offers a straightforward interface to print the student's complete enrollment summary. It removes the need for multiple calls to format and print each line.
