@@ -73,3 +73,20 @@ Our project **“SES: Student Enrollment System”** was done by our team **“S
 
 Our team would like to thank our instructor, **_Mr. Emmanuel Charlie Enriquez_** for guiding us throughout the Final Project.
 
+## REFERENCES 
+
+   - BatState-U. (n.d.). Student Portal. Retrieved November 21, 2025, from:
+      -   https://dione.batstate-u.edu.ph/student/#/
+
+   - DataCamp. (n.d.). Java Abstraction. Retrieved November 21, 2025, from:
+      -  https://www.datacamp.com/doc/java/abstraction
+
+   - GeeksforGeeks. (2025, October 9). Encapsulation in Java.
+      - https://www.geeksforgeeks.org/java/encapsulation-in-java/
+
+   - Great Learning Editorial Team. (2025, January 6). Polymorphism in Java with Examples. MyGreatLearning. Retrieved November 21, 2025, from:
+      -  https://www.mygreatlearning.com/blog/polymorphism-in-java/
+
+   - Programiz. (n.d.). Java Inheritance (With Examples). Retrieved November 21, 2025, from:
+      -  https://www.programiz.com/java-programming/inheritance
+
