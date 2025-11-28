@@ -19,7 +19,7 @@ The Student Enrollment System is a console-based program that simplifies the stu
     - Objects
         - In the ```main``` method, a new student object```newCicsStudent```, is created using the ``Student`` class's constructor: ```Student newCicsStudent = new Student(...)```.
         - This object holds all the specific data gathered during the enrollment process for that student.
-        - The ```studentRoster``` array, defined as private static ```Student[] studentRoster = new Student[50];```, is an array designed to hold up to 50 **Student objects**.
+**Student objects**.
 <br>
 
 - **ENCAPSULATION** - Encapsulation involves grouping data and the methods that work on that data within a class. It also controls how external entities can access that data.
