@@ -64,6 +64,8 @@ To start, the user needs to use the command like command prompt or terminal and 
 ![SAMPLE OUTPUT](https://github.com/cedricknoyda/image-/blob/main/582200834_1896306211097146_1638670185329471040_n.png)
 <br/>
 ![SAMPLE OUTPUT](https://github.com/cedricknoyda/image-/blob/main/583872097_2051664858910692_3950559076868853180_n.png)
+<br/>
+![SAMPLE OUTPUT](https://github.com/cedricknoyda/image-/blob/main/44743494-ee73-43a4-b0c9-680e2e896aa0.jpg)
 
 ## AUTHOR AND ACKNOWLEDGEMENT
 Our project **“SES: Student Enrollment System”** was done by our team **“Sesters”**. Our members’ name is listed here:
