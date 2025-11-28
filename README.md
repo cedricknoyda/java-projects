@@ -14,32 +14,32 @@ The Student Enrollment System is a console-based program that simplifies the stu
 ## OOP Concepts Applied
 - **CLASSES and OBJECTS**
     - Classes
-        - The ```Student```acts as a guide for making personal student records.It defines the attributes such as ```name```,```age```,```program```,and ```studentID```, and the methods (behavior) like ```displayDetails()```.
+        - The ```Student```acts as a guide for making personal student records.It defines the attributes such as ```name```,```age```,```program```,and ```srCode```, and the methods (behavior) like ```displayDetails()```.
         - The ```EnrollmentSystem``` class serves as the main application container. It holds the core logic, utility methods (```printCenteredLine```,``` displayCourses```), and the main execution point (```main```).
     - Objects
-        - In the ```main``` method, a new student object```newStudent```, is created using the ``Student`` class's constructor: ```Student newStudent = new Student(...)```.
+        - In the ```main``` method, a new student object```newCicsStudent```, is created using the ``Student`` class's constructor: ```Student newCicsStudent = new Student(...)```.
         - This object holds all the specific data gathered during the enrollment process for that student.
         - The ```studentRoster``` array, defined as private static ```Student[] studentRoster = new Student[50];```, is an array designed to hold up to 50 **Student objects**.
 <br>
 
 - **ENCAPSULATION** - Encapsulation involves grouping data and the methods that work on that data within a class. It also controls how external entities can access that data.
-   - Attributes like a student's ```name```, ```age```, and ```studentID``` are contained within the ```Student``` class
+   - Attributes like a student's ```name```, ```age```, and ```srCode``` are contained within the ```Student``` class
    - The program provides specific methods to interact with this data:
         - Getters (like ```getProgram()``` in the ```Student``` class) allow code to read a value.
         - Setters (like ```setBlock()``` in the ```Student``` class) allow code to write or modify a value in a controlled way.
 
 - **INHERITANCE** - Inheritance involves creating a superclass. Specialized subclasses then take on its shared attributes and behaviors.
    - Superclass:
-        - A base class, like ```AcademicPerson``` (or a similar name), is created. It contains attributes that are common to all university members, such as ```name```, ```age```, and ```address```.
+        - A base class, like ```Student``` (or a similar name), is created. It contains attributes that are common to all university members, such as ```name```, ```age```, and ```address```.
     - Subclasses:
-        -  Include classes such as ```Student```, ```Faculty```, and ```Administrator``` (or the other two subclasses you added), which extend the ```AcademicPerson``` superclass. They inherit common attributes and add their unique properties. For instance, the ```Student`` class adds ```studentID```, ```program```, and ```block```. This creates a clear "is-a" relationship; a **Student is an AcademicPerson**.
+        -  Include classes such as ```bsitStudent```, ```bscsStudent```, and ```Administrator``` (or the other two subclasses you added), which extend the ```Student``` superclass. They inherit common attributes and add their unique properties. For instance, the ```bsitStudent`` class adds ```srCode```, ```program```, and ```block```. This creates a clear relationship a **bsitStudent is an Student**.
           
 - **POLYMORPHISM** - Polymorphism, which means "many forms," allows a common method to work differently depending on the specific type of the object.
-    - Overridden Method: A method, such as ```getDetailsSummary()``` or ```displayRole()```, is defined in the superclass (```AcademicPerson```).
-    - Dynamic Behavior: This method is overridden in each subclass (```Student```, ```Faculty```, etc.) to provide role-specific output.
-        - The ```Student``` version might print: "Enrolled in BSIT - 1st Year 1st Sem."
-        - The ```Faculty``` version might print: "Teaching in the Computer Science Department."
-    - When a collection of ```AcademicPerson``` references is processed, calling the common method runs the right, specialized version for each object at runtime. This shows dynamic polymorphism.
+    - Overridden Method: A method, such as ```displayCourses()``` or ```displayCourses()```, is defined in the superclass (```Student```).
+    - Dynamic Behavior: This method is overridden in each subclass (```bsitStudent```, ```bscsStudent```, etc.) to provide role-specific output.
+        - The ```bsitStudent``` version might print: "Enrolled in BSIT - 1st Year 1st Sem."
+        - The ```bscsStudent``` version might print: "Teaching in the Computer Science Department."
+    - When a collection of ```Student``` references is processed, calling the common method runs the right, specialized version for each object at runtime. This shows dynamic polymorphism.
   
 - **ABSTRACTION** - Abstraction shows only the essential information while hiding the complicated implementation details.
    - Methods like ```displayCourses()``` hide the vast ```if/else``` logic that determines which specific courses to list based on the program (BSIT/BSCS) and year level.The calling code just needs to know the method name and the required parameters, which are ```program``` and ```yearLevel```.
