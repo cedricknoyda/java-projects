@@ -35,7 +35,7 @@ The Student Enrollment System is a console-based program that simplifies the stu
         -  Include classes such as ```bsitStudent```, ```bscsStudent```, and ```Administrator``` (or the other two subclasses you added), which extend the ```Student``` superclass. They inherit common attributes and add their unique properties. For instance, the ```bsitStudent`` class adds ```srCode```, ```program```, and ```block```. This creates a clear relationship a **bsitStudent is an Student**.
           
 - **POLYMORPHISM** - Polymorphism, which means "many forms," allows a common method to work differently depending on the specific type of the object.
-    - Overridden Method: A method, such as ```displayCourses()``` or ```displayCourses()```, is defined in the superclass (```Student```).
+    - Overridden Method: A method, such as ```displayCourses()```, is defined in the superclass (```Student```).
     - Dynamic Behavior: This method is overridden in each subclass (```bsitStudent```, ```bscsStudent```, etc.) to provide role-specific output.
         - The ```bsitStudent``` version might print: "Enrolled in BSIT - 1st Year 1st Sem."
         - The ```bscsStudent``` version might print: "Teaching in the Computer Science Department."
